@@ -1,0 +1,6 @@
+import"pe"
+rule IsNET_EXE : PECheck
+{
+	condition:
+		pe.imports ("mscoree.dll","_CorExeMain")
+}
